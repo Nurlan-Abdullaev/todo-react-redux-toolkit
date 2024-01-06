@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../store/todoSlice/todoSlice";
-// import { addTodo } from "../store/todoSlice/todoSlice";
 
 export const AddTodo = () => {
   const [text, steText] = useState("");
