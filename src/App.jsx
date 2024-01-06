@@ -1,6 +1,7 @@
 import { styled } from "@mui/material";
 import { AddTodo } from "./components/AddTodo";
 import { TodoList } from "./components/TodoList";
+import { Modal } from "./UI/modal/Modal";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>Todo app</h1>
       <AddTodo />
       <TodoList />
+      <Modal />
     </Container>
   );
 }
