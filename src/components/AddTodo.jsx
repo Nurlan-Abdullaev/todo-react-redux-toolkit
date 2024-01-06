@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../store/todoSlice/todoSlice";
+import { Button, TextField } from "@mui/material";
 
 export const AddTodo = () => {
   const [text, steText] = useState("");
@@ -16,12 +17,17 @@ export const AddTodo = () => {
 
   return (
     <form onSubmit={handlerAdd}>
-      <input
+      <TextField
+        id="outlined-basic"
+        label="Outlined"
+        variant="outlined"
         type="text"
         value={text}
         onChange={(e) => steText(e.target.value)}
       />
-      <button type="submit">add</button>
+      <Button variant="contained" type="submit">
+        add
+      </Button>
     </form>
   );
 };
